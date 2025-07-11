@@ -1,0 +1,253 @@
+body {
+    background: #f4f4f4;
+    font-family: math;
+}
+
+.header {
+    background-color: #4CAF50;
+    display: flex;
+    align-items: center;
+    padding: 0px 24px;
+    border-radius: 15px;
+    height: 45px;
+}
+
+.main a{
+    padding: 7px 14px;
+    background-color: #2af158;
+    color: #000000;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+}
+.main a:hover{
+    background-color:rgb(50, 157, 73);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 7px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+.table-container {
+    margin-top: 7px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.FormName{
+    margin: 5px 0; 
+    background-color: bisque; 
+    text-align: center;
+    margin-top: -1%;
+}
+
+/* Header Section */
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.name {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.connect-db {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user h4 {
+    margin-right: 10px;
+}
+
+.user button {
+    background-color: #67c3f8;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.user button a {
+    text-decoration: none;
+    color: white;
+}
+
+.user button:hover {
+    background-color: #45a1c1;
+}
+
+/* Scrollbar Styling */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0078D7;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* this css code for the showing databases table in the admin panel */
+nav {
+    margin-top: 9px;
+    text-align: center;
+}
+nav a{
+    padding: 7px 14px;
+    background-color: #2af158;
+    color: #000000;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color:rgb(50, 157, 73);
+}
+
+
+/* Styling for table and delete button */
+.table-container {
+    margin: 20px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-container table th, .table-container table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.delete-btn {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    color: darkred;
+}
+
+
+
+/* Filter & Sort Container */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Filter Item */
+.filter-container label {
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.filter-container select,
+.filter-container input[type="date"],
+.filter-container input[type="time"],
+.filter-container input[type="text"] {
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.filter-container select:focus,
+.filter-container input[type="date"]:focus,
+.filter-container input[type="time"]:focus,
+.filter-container input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+/* Button Styles */
+.filter-container button {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.filter-container button:hover {
+    background-color: #0056b3;
+}
+
+.filter-container .clear-btn {
+    background-color: #dc3545;
+}
+
+.filter-container .clear-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-container label {
+        margin-bottom: 5px;
+    }
+}

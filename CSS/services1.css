@@ -1,0 +1,197 @@
+/* this code are only use for services.php file */
+/* the services bar css code here */
+.service_bar{
+    background-color: #cbe7f7;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 16%;
+    margin-right: 15%;
+}
+.service{
+    color: brown;
+    margin-left: 1%;
+}
+.service_bar ul {
+    list-style: none;
+    display: flex;
+}
+.service_bar ul li {
+    padding: 1px 20px;
+    position: relative;
+}
+.service_bar ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+.service_bar ul li a:hover {
+    color: #ff0505;
+}
+
+/* Box Styling */
+.box {
+    background: #e8f1fa;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 12px;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    display: none;
+    margin-top: 8px;
+}
+.box.active {
+    display: block;
+}
+.box h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+/* Scrollbar Styling */
+.right-side::-webkit-scrollbar {
+    width: 8px;
+}
+.right-side::-webkit-scrollbar-thumb {
+    background-color: #0078D7;
+    border-radius: 4px;
+}
+.right-side::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Main Container */
+.Regular_Services {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Left Side */
+.left-side {
+    width: 48%;
+    height: 450px;
+    background-color: #fcfcfc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+.left-side img {
+    max-width: 100%;
+    height: 75%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Right Side */
+.right-side {
+    width: 48%;
+    height: 450px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 500px;
+}
+.right-side h2 {
+    color: #0078D7;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.right-side label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 18px;
+}
+
+/* Input Box Styling */
+.right-side input[type="text"], 
+.right-side input[type="email"],
+.right-side input[type="tel"], 
+.right-side input[type="date"], 
+.right-side input[type="time"],
+.right-side input[type="number"],
+.right-side input[type="file"],
+.right-side select,
+.right-side textarea {
+    width: 95%;
+    padding: 9px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Focus and Hover Effects */
+.right-side input[type="text"]:hover, 
+.right-side input[type="email"]:hover,
+.right-side input[type="tel"]:hover,
+.right-side input[type="date"]:hover,
+.right-side input[type="time"]:hover,
+.right-side input[type="number"]:hover, 
+.right-side input[type="file"]:hover,
+.right-side select:hover,
+.right-side textarea:hover,
+.right-side input[type="text"]:focus, 
+.right-side input[type="email"]:focus,
+.right-side input[type="tel"]:focus,
+.right-side input[type="date"]:focus,
+.right-side input[type="time"]:focus,
+.right-side input[type="number"]:focus, 
+.right-side input[type="file"]:focus,
+.right-side select:focus,
+.right-side textarea:focus {
+    border: 1px solid #0078D7;
+    background-color: #f1faff;
+}
+
+/* Dropdown Styling */
+.right-side select {
+    cursor: pointer;
+    width: 99%;
+}
+/* Checkbox Styling */
+.right-side input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 6px;
+}
+/* Textarea Styling */
+.right-side textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+/* Submit Button Styling */
+.right-side input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+.right-side input[type="submit"]:hover {
+    background-color: #24de2c;
+}

@@ -1,0 +1,123 @@
+        /* Global Styles */
+
+
+        html {
+            scrollbar-width: none;
+        }
+
+        /* Header */
+        .header {
+            background-color: #cbe7f7;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-container {
+            display: flex;
+            width: 95%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Logo Section */
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        .name {
+            margin-left: 10px;
+            color: brown;
+            font-size: 20px;
+        }
+
+        /* Navigation Bar */
+        .menu__bar ul {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu__bar ul li {
+            position: relative;
+        }
+
+        .menu__bar ul li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 23px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .menu__bar ul li a:hover {
+            color: #ff0505;
+        }
+
+        /* Right Section */
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Search Bar */
+        .SearchBar {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .SearchBar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+
+        .SearchBar button {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        /* User Info */
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-info h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .user-info button {
+            background-color: #008fe0;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .user-info button a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .user-info button:hover {
+            background-color: #67c3f8;
+        }

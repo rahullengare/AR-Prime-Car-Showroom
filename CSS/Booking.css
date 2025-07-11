@@ -1,0 +1,291 @@
+body{
+    background-size: 100%;
+} 
+
+/* this is header scrtion css */
+.header {
+    background-color: #cbe7f7;
+    display: flex;
+    align-content: center;
+    border-radius: 15px;
+    height: 55px;
+}
+.info {
+    height: 50px;
+    width: 80px;
+    margin: 6px;
+    margin-left: 40px;
+    display: flex;
+}
+.logo{
+    height: 42px;
+    border-radius: 15px;
+}
+.name{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: brown;
+}
+.center {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 37px;
+    position: relative;
+    width: 100%;
+}
+.marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 500px; 
+    flex-grow: 1;
+    text-align: center;
+}
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 4s ease-in-out infinite alternate;
+}
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.marquee-wrapper img {
+    height: 42px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.marquee-wrapper h2{
+    margin-top: 4px;
+}
+.left-logo {
+    margin-right: -40%;
+}
+.right-logo {
+    margin-left: -40%;
+}
+.connect-db {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user h4 {
+    margin-right: 10px;
+}
+
+.user button {
+    background-color: #67c3f8;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.user button a {
+    text-decoration: none;
+    color: white;
+}
+
+.user button:hover {
+    background-color: #45a1c1;
+}
+
+
+/* Main booking form Styling */
+.main {
+    background: #e8f1fa;
+    text-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 12px;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    margin-top: 8px;
+}
+
+/* Scrollbar Styling */
+.form::-webkit-scrollbar {
+    width: 8px;
+}
+.form::-webkit-scrollbar-thumb {
+    background-color: #0078D7;
+    border-radius: 4px;
+}
+.form::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Main Container */
+.main-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main from Side css*/
+.form {
+    width: 48%;
+    height: 540px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 800px;
+}
+.form h2 {
+    color: #0078D7;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.form label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px; 
+    margin-left: 5px;
+}
+.form .accessories-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Input Box Styling */
+.form input[type="text"], 
+.form input[type="email"],
+.form input[type="tel"], 
+.form input[type="date"],
+.form input[type="time"],
+.form input[type="datetime-local"], 
+.form input[type="number"],
+.form input[type="file"],
+.form select,
+.form textarea {
+    width: 95%;
+    padding: 9px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.1s ease-in-out;
+}
+
+/* Focus and Hover Effects */
+.form input[type="text"]:hover, 
+.form input[type="email"]:hover,
+.form input[type="tel"]:hover,
+.form input[type="date"]:hover,
+.form input[type="time"]:hover,
+.form input[type="datetime-local"]:hover,
+.form input[type="number"]:hover, 
+.form input[type="file"]:hover,
+.form select:hover,
+.form textarea:hover,
+.form input[type="text"]:focus, 
+.form input[type="email"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="date"]:focus,
+.form input[type="time"]:focus,
+.form input[type="datetime-local"]:focus,
+.form input[type="number"]:focus, 
+.form input[type="file"]:focus,
+.form select:focus,
+.form textarea:focus {
+    border: 1px solid #0078D7;
+    background-color: #f1faff;
+}
+
+/* Dropdown Styling */
+.form select {
+    cursor: pointer;
+    width: 99%;
+}
+/* Checkbox Styling */
+.form input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 6px;
+}
+/* Textarea Styling */
+.form textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+
+/* this is interest btn or test area css */
+.result {
+    margin-left: 23%;
+    margin-top: -5%;
+    padding: 9px 15px;
+    font-weight: bold;
+    color: green;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.1s ease-in-out;
+}
+.result p {
+    font-weight: bold;
+}
+.loan-details {
+    display: none;
+}
+.loan-details.active {
+    display: block;
+}
+button {
+    padding: 10px 20px;
+}
+
+/* Button Container css*/
+.button-container {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px; 
+}
+/* Cancel & submit Button css */
+.cancel-btn,
+.submit-btn {
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+    width: 50%;
+}
+.cancel-btn{
+    background-color: #f7756b; 
+}
+.cancel-btn:hover {
+    background-color: #ff1200; 
+}
+.submit-btn {
+    background-color: #4CAF50; 
+}
+.submit-btn:hover {
+    background-color: #24de2c;  
+}
